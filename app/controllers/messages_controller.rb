@@ -39,14 +39,14 @@ class MessagesController < ApplicationController
     if @message.save
       sync_new @message
     end
-    respond_to do |format|
-       format.js { head :no_content  }
-    end
+    redirect_to :back
   end
 
   def destroy
      @message = @conversation.messages.find(params[:id])
      @message.destroy
+     sync_destroy @message
+
      redirect_to :back
   end
 
