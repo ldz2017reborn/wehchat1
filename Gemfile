@@ -35,7 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
-gem "bootstrap-sass"
+gem 'bootstrap-sass'
+gem 'awesome_rails_console'
 
 
 group :development, :test do
