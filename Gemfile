@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'awesome_rails_console'
+gem 'faye'
+gem 'thin', require: false
+gem 'render_sync'
 
 group :production do
    gem "pg"
